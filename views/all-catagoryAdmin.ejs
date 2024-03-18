@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>all-catagory</title>
+</head>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+<link rel="stylesheet" href="../css/signUp.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<body>
+    <div class="wrapper">
+      <%- include('adminHeader.ejs') %>
+        <div class="container">
+            <div class="card">
+                <div class="card-header">
+                  <h3 class="card-title">Bordered Table</h3>
+                </div>
+                <!-- /.card-header -->
+                <div class="card-body">
+                  <table class="table table-bordered">
+                    <thead>
+                      <tr>
+                        <th style="width: 10px">#</th>
+                        <th>Catagory Name</th>
+                        <th></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                        <% categories.forEach((category, index) => { %>
+                            <tr>
+                              <td><%= index + 1 %></td>
+                              <td><%= category.Catagory %></td>
+                            <td><a href="/deletecatagory/<%= category.Catagory %>"><i class="fas fa-trash"></i></a></td>
+                            </tr>
+                          <% }); %>
+                    </tbody>
+                  </table>
+                </div>
+                <!-- /.card-body -->
+              </div>
+            </div>
+            <%- include('adminFooter.ejs') %>
+    </div>
+</body>
+</html>

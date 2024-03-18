@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= products.category %></title>
+</head>
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,900&display=swap" rel="stylesheet">
+<body>
+    <div class="wrapper">
+        <%- include('headerUser.ejs') %>
+        <div class="container">
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<div class="section-title">
+						<h2 class="ec-bg-title"><%= products.category %></h2>
+						<p class="sub-title">Browse The Collection of Top Categories</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+                <% products.forEach((products) => { %>
+				<div class="col-lg-3 col-md-6 col-sm-6">
+					<!-- START single card -->
+					<div class="ec-product-tp">
+						<div class="ec-product-image">
+							<a href="#">
+								<img src="../uploads/<%= products.frontImage %>" class="img-center" alt="">
+							</a>
+							<span class="ec-product-ribbon">New</span>
+							<div class="ec-link-icon">
+								<a href="#" data-tip="Add to Wishlist"><i class="fa-regular fa-heart"></i></a>
+								<a href="#" data-tip="Compare"><i class="fa-solid fa-repeat"></i></a>
+								<a href="/product" data-tip=""><i class="fa-solid fa-eye"></i></a>
+							</div>
+						</div>
+						<div class="ec-product-body">
+							<h3 class="ec-title"><a href="#"><%= products.ProductName %></a></h3>
+							<p class="ec-description">
+								<%= products.Details %>
+							</p>
+							<ul class="ec-rating">
+								<li class="ecicon eci-star fill"></li>
+								<li class="ecicon eci-star fill"></li>
+								<li class="ecicon eci-star fill"></li>
+								<li class="ecicon eci-star fill"></li>
+								<li class="ecicon eci-star"></li>
+							</ul>
+							<div class="ec-price"><span>$90.00</span> $<%= products.Price %></div>
+							<div class="ec-link-btn">
+								<button class="ec-add-to-cart" data-product-code="<%= products.code %>"
+									onclick="addToCart('<%= products.code %>')">add to cart</button>
+							</div>
+						</div>
+
+					</div>
+					<!-- START single card -->
+				</div>
+                <% }); %>
+			</div>
+		</div>
+        <%- include('footerUser.ejs') %>
+        </div>        
+</body>
+<script>
+    function addToCart(productCode) {
+        // Create a form element
+        const form = document.createElement('form');
+        form.method = 'POST'; // Set the method to POST
+        form.action = `/add-to-cart/${productCode}`; // Specify the action URL
+    
+        // Create an input field for the product code
+        const input = document.createElement('input');
+        input.type = 'hidden'; // Hidden input
+        input.name = 'productCode'; // Name of the input
+        input.value = productCode; // Value of the input
+    
+        // Append the input field to the form
+        form.appendChild(input);
+    
+        // Append the form to the document body and submit it
+        document.body.appendChild(form);
+        form.submit();
+    }
+    </script> 
+</html>

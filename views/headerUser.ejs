@@ -1,0 +1,407 @@
+
+
+
+     <header class="ec-header">
+        <!--Ec Header Top Start -->
+        <div class="header-top">
+            <div class="container">
+                <div class="row align-items-center">
+                    <!-- Header Top social Start -->
+                    <div class="col text-left header-top-left d-none d-lg-block">
+                        <div class="header-top-social">
+                            <span class="social-text text-upper">Follow us on:</span>
+                            <ul class="mb-0">
+                                <li class="list-inline-item"><a class="hdr-facebook" href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                <li class="list-inline-item"><a class="hdr-twitter" href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                                <li class="list-inline-item"><a class="hdr-instagram" href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                                <li class="list-inline-item"><a class="hdr-linkedin" href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Header Top social End -->
+                    <!-- Header Top Message Start -->
+                    <div class="col text-center header-top-center">
+                        <div class="header-top-message text-upper">
+                            <span>Free Shipping</span>This Week Order Over - $75
+                        </div>
+                    </div>
+                    <!-- Header Top Message End -->
+                    <!-- Header Top Language Currency -->
+                    <div class="col header-top-right d-none d-lg-block">
+                        <div class="header-top-lan-curr d-flex justify-content-end">
+                            <!-- Currency Start -->
+                            <div class="header-top-curr dropdown">
+                                <button class="dropdown-toggle text-upper" data-bs-toggle="dropdown">Currency <i class="fa-solid fa-caret-down"></i></button>
+                                <ul class="dropdown-menu">
+                                    <li class="active"><a class="dropdown-item" href="#">USD $</a></li>
+                                    <li><a class="dropdown-item" href="#">EUR €</a></li>
+                                </ul>
+                            </div>
+                            <!-- Currency End -->
+                            <!-- Language Start -->
+                            <div class="header-top-lan dropdown">
+                                <button class="dropdown-toggle text-upper" data-bs-toggle="dropdown">Language <i class="fa-solid fa-caret-down"></i></button>
+                                <ul class="dropdown-menu">
+                                    <li class="active"><a class="dropdown-item" href="#">English</a></li>
+                                    <li><a class="dropdown-item" href="#">Italiano</a></li>
+                                </ul>
+                            </div>
+                            <!-- Language End -->
+
+                        </div>
+                    </div>
+                    <!-- Header Top Language Currency -->
+                    <!-- Header Top responsive Action -->
+                    <div class="col d-lg-none ">
+                        <div class="ec-header-bottons">
+                            <!-- Header User Start -->
+                            <div class="ec-header-user dropdown">
+                                <button class="dropdown-toggle" data-bs-toggle="dropdown"><i class="fa-regular fa-user"></i></button>
+                                <ul class="dropdown-menu dropdown-menu-right">
+                                    <li><a class="dropdown-item" href="register.html">Register</a></li>
+                                    <li><a class="dropdown-item" href="/cart-checkout">Checkout</a></li>
+                                    <li><a class="dropdown-item" href="login.html">Login</a></li>
+                                </ul>
+                            </div>
+                            <!-- Header User End -->
+                            <!-- Header Cart Start -->
+                            <a href="wishlist.html" class="ec-header-btn ec-header-wishlist">
+                                <div class="header-icon"><i class="fa-regular fa-heart"></i></div>
+                                <span class="ec-header-count">4</span>
+                            </a>
+                            <!-- Header Cart End -->
+                            <!-- Header Cart Start -->
+                            <a href="/viewCart" class="ec-header-btn ec-side-toggle">
+                                <div class="header-icon"><img src="../icons/shopping-cart.png" alt="cart-icon"  onclick="openCart()"></div>
+                                <span class="ec-header-count cart-count-lable">3</span>
+                            </a>
+                            <!-- Header Cart End -->
+                            <a href="javascript:void(0)" class="ec-header-btn ec-sidebar-toggle">
+                                <i class="fi fi-rr-apps"></i>
+                            </a>
+                            <!-- Header menu Start -->
+                            <a href="#ec-mobile-menu" class="ec-header-btn ec-side-toggle d-lg-none" onclick="openCart()">
+                                <i class="fi fi-rr-menu-burger"></i>
+                            </a>
+                            <!-- Header menu End -->
+                        </div>
+                    </div>
+                    <!-- Header Top responsive Action -->
+                </div>
+            </div>
+        </div>
+        <!-- Ec Header Top  End -->
+        <!-- Ec Header Bottom  Start -->
+        <div class="ec-header-bottom d-none d-lg-block">
+            <div class="container position-relative">
+                <div class="row">
+                    <div class="ec-flex">
+                        <!-- Ec Header Logo Start -->
+                        <div class="align-self-center">
+                            <div class="header-logo">
+                                <a href="/"><img src="../icons/logo.png" alt="Site Logo"><img class="dark-logo" src="assets/images/logo/dark-logo.png" alt="Site Logo" style="display: none;"></a>
+                            </div>
+                        </div>
+                        <!-- Ec Header Logo End -->
+
+                        <!-- Ec Header Search Start -->
+                        <div class="align-self-center">
+                            <div class="header-search">
+                                <form class="ec-btn-group-form" action="#">
+                                    <input class="form-control ec-search-bar" placeholder="Search products..." type="text">
+                                    <button class="submit" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                                </form>
+                            </div>
+                        </div>
+                        <!-- Ec Header Search End -->
+
+                        <!-- Ec Header Button Start -->
+                        <div class="align-self-center">
+                            <div class="ec-header-bottons">
+
+                                <!-- Header Admin Start -->
+                                <div class="ec-header-user dropdown">
+                                    <a href="/AdminLogin" class="dropdown-toggle"><i class="fa-solid fa-user-tie"></i></a>
+                                </div>
+                                <!-- Header Admin End --> 
+                                <!-- Header User Start -->
+                                <div class="ec-header-user dropdown">
+                                    <a href="/userLogin" class="dropdown-toggle"> <i class="fa-regular fa-user"></i></a>
+                                </div>
+                                <!-- Header User End -->   
+                                <!-- Header wishlist Start -->
+                                <a href="wishlist.html" class="ec-header-btn ec-header-wishlist">
+                                    <div class="header-icon"><i class="fa-regular fa-heart"></i></div>
+                                    <span class="ec-header-count">4</span>
+                                </a>
+                                <!-- Header wishlist End -->
+                                <!-- Header Cart Start -->
+                                <a  class="ec-header-btn ec-side-toggle"  onclick="openCart()">
+                                    <div class="header-icon"><img src="../icons/shopping-cart.png" alt="cart-icon" ></div>
+                                    <!-- <span class="ec-header-count cart-count-lable">3</span> -->
+                                </a>
+                                <!-- Header Cart End -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Ec Header Button End -->
+        <!-- Header responsive Bottom  Start -->
+        <div class="ec-header-bottom d-lg-none">
+            <div class="container position-relative">
+                <div class="row ">
+
+                    <!-- Ec Header Logo Start -->
+                    <div class="col">
+                        <div class="header-logo">
+                            <a href="/"><img src="assets/images/logo/logo.png" alt="Site Logo"><img class="dark-logo" src="assets/images/logo/dark-logo.png" alt="Site Logo" style="display: none;"></a>
+                        </div>
+                    </div>
+                    <!-- Ec Header Logo End -->
+                    <!-- Ec Header Search Start -->
+                    <div class="col">
+                        <div class="header-search">
+                            <form class="ec-btn-group-form" action="#">
+                                <input class="form-control ec-search-bar" placeholder="Search products..." type="text">
+                                <button class="submit" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- Ec Header Search End -->
+                </div>
+            </div>
+        </div>
+        <!-- Header responsive Bottom  End -->
+        <!-- EC Main Menu Start -->
+        <div id="ec-main-menu-desk" class="d-none d-lg-block sticky-nav">
+            <div class="container position-relative">
+                <div class="row">
+                    <div class="col-md-12 align-self-center">
+                        <div class="ec-main-menu">
+                            <a href="javascript:void(0)" class="ec-header-btn ec-sidebar-toggle">
+                                <i class="fi fi-rr-apps"></i>
+                            </a>
+                            <ul>
+                                <li><a href="/">Home</a></li>
+                                <li class="dropdown"><a href="/allProducts">Products</a>
+                                    <ul class="sub-menu">
+                                        <% categories.forEach((category) => { %>
+                                        <li><a href="/<%= category.Catagory %>"><%= category.Catagory %></a></li>
+                                        <% }); %>
+                                    </ul>
+                                </li>
+                                <li class="dropdown"><span class="main-label-note-new" data-toggle="tooltip" title="" data-bs-original-title="NEW" aria-label="NEW"></span><a href="javascript:void(0)">Others</a>
+                                    <ul class="sub-menu">
+                                        <li class="dropdown position-static"><a href="javascript:void(0)">Mail
+                                                Confirmation
+                                                <i class="ecicon eci-angle-right"></i></a>
+                                            <ul class="sub-menu sub-menu-child">
+                                                <li><a href="email-template-confirm-1.html">Mail Confirmation</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown position-static"><a href="javascript:void(0)">Mail Reset
+                                                password
+                                                <i class="ecicon eci-angle-right"></i></a>
+                                            <ul class="sub-menu sub-menu-child">
+                                                <li><a href="email-template-forgot-password-1.html">Reset password 1</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown position-static"><a href="javascript:void(0)">Mail
+                                                Promotional
+                                                <i class="ecicon eci-angle-right"></i></a>
+                                            <ul class="sub-menu sub-menu-child">
+                                                <li><a href="email-template-offers-1.html">Offer mail 1</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown"><a href="javascript:void(0)">Blog</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="blog-left-sidebar.html">Blog left sidebar</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="offer.html">Hot Offers</a></li>
+                                <li class="dropdown scroll-to"><a href="javascript:void(0)"><i class="fi fi-rr-sort-amount-down-alt"></i></a>
+                                    <ul class="sub-menu">
+                                        <li class="menu_title">Scroll To Section</li>
+                                        <li><a href="javascript:void(0)" data-scroll="collection" class="nav-scroll">Top
+                                                Collection</a></li>
+                                        <li><a href="javascript:void(0)" data-scroll="categories" class="nav-scroll">Categories</a></li>
+                                        <li><a href="javascript:void(0)" data-scroll="offers" class="nav-scroll">Offers</a></li>
+                                        <li><a href="javascript:void(0)" data-scroll="vendors" class="nav-scroll">Top
+                                                Vendors</a></li>
+                                        <li><a href="javascript:void(0)" data-scroll="services" class="nav-scroll">Services</a></li>
+                                        <li><a href="javascript:void(0)" data-scroll="arrivals" class="nav-scroll">New
+                                                Arrivals</a></li>
+                                        <li><a href="javascript:void(0)" data-scroll="reviews" class="nav-scroll">Client
+                                                Review</a></li>
+                                        <li><a href="javascript:void(0)" data-scroll="insta" class="nav-scroll">Instagram Feed</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Ec Main Menu End -->
+        <!-- ekka Mobile Menu Start -->
+        <div id="ec-mobile-menu" class="ec-side-cart ec-mobile-menu">
+            <div class="ec-menu-title">
+                <span class="menu_title">My Menu</span>
+                <button class="ec-close"  onclick="closeCart()">×</button>
+            </div>
+            <div class="ec-menu-inner">
+                <div class="ec-menu-content">
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><span class="menu-toggle"></span><a href="javascript:void(0)">Categories</a>
+                            <ul class="sub-menu">
+                                <li><span class="menu-toggle"></span>
+                                    <a href="javascript:void(0)">Classic Variation</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="shop-left-sidebar-col-3.html">Left sidebar 3 column</a></li>
+                                        <li><a href="shop-left-sidebar-col-4.html">Left sidebar 4 column</a></li>
+                                        <li><a href="shop-right-sidebar-col-3.html">Right sidebar 3 column</a></li>
+                                        <li><a href="shop-right-sidebar-col-4.html">Right sidebar 4 column</a></li>
+                                        <li><a href="shop-full-width.html">Full width 4 column</a></li>
+                                    </ul>
+                                </li>
+                                <li><span class="menu-toggle"></span>
+                                    <a href="javascript:void(0)">Classic Variation</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="shop-banner-left-sidebar-col-3.html">Banner left sidebar 3
+                                                column</a></li>
+                                        <li><a href="shop-banner-left-sidebar-col-4.html">Banner left sidebar 4
+                                                column</a></li>
+                                        <li><a href="shop-banner-right-sidebar-col-3.html">Banner right sidebar 3
+                                                column</a></li>
+                                        <li><a href="shop-banner-right-sidebar-col-4.html">Banner right sidebar 4
+                                                column</a></li>
+                                        <li><a href="shop-banner-full-width.html">Banner Full width 4 column</a></li>
+                                    </ul>
+                                </li>
+                                <li><span class="menu-toggle"></span>
+                                    <a href="javascript:void(0)">Columns Variation</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="shop-full-width-col-3.html">3 Columns full width</a></li>
+                                        <li><a href="shop-full-width-col-4.html">4 Columns full width</a></li>
+                                        <li><a href="shop-full-width-col-5.html">5 Columns full width</a></li>
+                                        <li><a href="shop-full-width-col-6.html">6 Columns full width</a></li>
+                                        <li><a href="shop-banner-full-width-col-3.html">Banner 3 Columns</a></li>
+                                    </ul>
+                                </li>
+                                <li><span class="menu-toggle"></span>
+                                    <a href="javascript:void(0)">List Variation</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="shop-list-left-sidebar.html">Shop left sidebar</a></li>
+                                        <li><a href="shop-list-right-sidebar.html">Shop right sidebar</a></li>
+                                        <li><a href="shop-list-banner-left-sidebar.html">Banner left sidebar</a></li>
+                                        <li><a href="shop-list-banner-right-sidebar.html">Banner right sidebar</a></li>
+                                        <li><a href="shop-list-full-col-2.html">Full width 2 columns</a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="p-0" href="shop-left-sidebar-col-3.html"><img class="img-responsive" src="assets/images/menu-banner/1.jpg" alt=""></a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><span class="menu-toggle"></span><a href="/allProducts">Products</a>
+                            <ul class="sub-menu">
+                                <li><span class="menu-toggle"></span><a href="javascript:void(0)">Product page</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="product-left-sidebar.html">Product left sidebar</a></li>
+                                        <li><a href="product-right-sidebar.html">Product right sidebar</a></li>
+                                    </ul>
+                                </li>
+                                <li><span class="menu-toggle"></span><a href="javascript:void(0)">Product 360</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="product-360-left-sidebar.html">360 left sidebar</a></li>
+                                        <li><a href="product-360-right-sidebar.html">360 right sidebar</a></li>
+                                    </ul>
+                                </li>
+                                <li><span class="menu-toggle"></span><a href="javascript:void(0)">Product vodeo</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="product-video-left-sidebar.html">vodeo left sidebar</a></li>
+                                        <li><a href="product-video-right-sidebar.html">vodeo right sidebar</a></li>
+                                    </ul>
+                                </li>
+                                <li><span class="menu-toggle"></span><a href="javascript:void(0)">Product gallery</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="product-gallery-left-sidebar.html">Gallery left sidebar</a></li>
+                                        <li><a href="product-gallery-right-sidebar.html">Gallery right sidebar</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="product-full-width.html">Clothes</a></li>
+                                <li><a href="product-360-full-width.html">Footwear</a></li>
+                                <li><a href="product-video-full-width.html">Eyewear</a></li>
+                                <li><a href="product-gallery-full-width.html">Accessories</a></li>
+                                <li><a href="product-gallery-full-width.html">Electronics</a></li>
+                            </ul>
+                        </li>
+                        <li><span class="menu-toggle"></span><a href="javascript:void(0)">Others</a>
+                            <ul class="sub-menu">
+                                <li><span class="menu-toggle"></span><a href="javascript:void(0)">Mail Confirmation</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="email-template-confirm-1.html">Mail Confirmation</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"><span class="menu-toggle"></span><a href="javascript:void(0)">Blog</a>
+                            <ul class="sub-menu">
+                                <li><a href="blog-left-sidebar.html">Blog left sidebar</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="offer.html">Hot Offers</a></li>
+                    </ul>
+                </div>
+                <div class="header-res-lan-curr">
+                    <div class="header-top-lan-curr">
+                        <!-- Language Start -->
+                        <div class="header-top-lan dropdown">
+                            <button class="dropdown-toggle text-upper" data-bs-toggle="dropdown">Language <i class="fa-solid fa-caret-down"></i></button>
+                            <ul class="dropdown-menu">
+                                <li class="active"><a class="dropdown-item" href="#">English</a></li>
+                                <li><a class="dropdown-item" href="#">Italiano</a></li>
+                            </ul>
+                        </div>
+                        <!-- Language End -->
+                        <!-- Currency Start -->
+                        <div class="header-top-curr dropdown">
+                            <button class="dropdown-toggle text-upper" data-bs-toggle="dropdown">Currency <i class="fa-solid fa-caret-down"></i></button>
+                            <ul class="dropdown-menu">
+                                <li class="active"><a class="dropdown-item" href="#">USD $</a></li>
+                                <li><a class="dropdown-item" href="#">EUR €</a></li>
+                            </ul>
+                        </div>
+                        <!-- Currency End -->
+                    </div>
+                    <!-- Social Start -->
+                    <div class="header-res-social">
+                        <div class="header-top-social">
+                            <ul class="mb-0">
+                                <li class="list-inline-item"><a class="hdr-facebook" href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                <li class="list-inline-item"><a class="hdr-twitter" href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                                <li class="list-inline-item"><a class="hdr-instagram" href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                                <li class="list-inline-item"><a class="hdr-linkedin" href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Social End -->
+                </div>
+            </div>
+        </div>
+        <!-- ekka mobile Menu End -->
+    </header> 
+    <script>
+        function openCart() {
+            console.log("Open cart")
+            var targetElement = document.querySelector('.ec-side-cart.ec-open');
+            if (targetElement) {
+                targetElement.style.webkitTransform = 'transform: translate(10px, 10px);';
+            }
+        }
+    </script> 

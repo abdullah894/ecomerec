@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+<link rel="stylesheet" href="/css/signUp.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<body style="background-color: #BEFFF7;">
+    <div class="card card-primary" id="addItemsCard">
+        <div class="card-header">
+        </div>
+        <!-- /.card-header -->
+        <!-- form start -->
+        <form action="/updateProduct/<%= getProduct.code %>" method="post" enctype="multipart/form-data">
+          <div class="card-body">
+            <label for="exampleInputFile">Select catagory</label>
+            <div class="inputbox">
+                <h5><%= getProduct.category %></h5>
+            </div>  
+            <div class="form-group">
+              <label for="exampleInputFile">Front Image</label>
+              <div class="input-group">
+                <div class="custom-file">
+                  <input type="file" placeholder="Choose image" name="frontImage">
+                </div>
+              </div>
+              <label for="exampleInputFile">Back Image</label>
+              <div class="input-group">
+                <div class="custom-file">
+                  <input type="file" placeholder="Choose image" name="backImage">
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="Name">Name of Product</label>
+              <input type="text" class="form-control" name="ProductName" placeholder="Enter name for product" value="<%= getProduct.ProductName %>">
+            </div>
+            <div class="form-group">
+              <label for="Name">Select category</label>
+              <input type="checkbox" id="menCheckbox" name="men" value="men" <%=getProduct.Gender.includes('men') ? 'checked'  : '' %>>
+              <label for="men">Men</label>
+            
+              <input type="checkbox" id="womenCheckbox" name="women" value="women" <%=getProduct.Gender.includes('women') ? 'checked' : '' %>>
+              <label for="women">Women</label>
+            
+              <input type="checkbox" id="kidsCheckbox" name="kids" value="kids" <%=getProduct.Gender.includes('kids')  ? 'checked' : '' %>>
+              <label for="kids">Kids</label>
+            </div>            
+            <div class="form-group">
+              <label for="Name">Avaiable Colors of Products</label><br>
+              <input type="text"  name="color1" class="Color" value="<%= getProduct.color1 %>">
+              <label>Color-1</label>
+              <input type="text"  name="color2" class="Color" value="<%= getProduct.color2 %>">
+              <label>Color-2</label>
+              <input type="text"  name="color3" class="Color" value="<%= getProduct.color3 %>">
+              <label>Color-3</label>
+              <input type="text"  name="color4" class="Color" value="<%= getProduct.color4 %>">
+              <label>Color-4</label>
+            </div>  
+            <div class="form-group">
+              <label for="Name">Price of your Product</label>
+              <input type="text" class="form-control" name="Price" placeholder="Enter price for your product in PKR." value="<%= getProduct.Price %>">
+            </div>  
+            <div class="form-group">
+              <label for="Name">Details of your Product</label>
+              <input type="text" class="form-control" name="Details" placeholder="Enter description/Details." maxlength="1000" style="height: 11rem;" value="<%= getProduct.Details %>">
+            </div>
+          </div>
+          <!-- /.card-body -->
+
+          <div class="card-footer">
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </div>
+        </form>
+      </div>
+</body>
+</html>
